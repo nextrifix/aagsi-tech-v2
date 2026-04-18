@@ -43,7 +43,7 @@ export default function ServicesPage() {
           </div>
           <div className="md:w-2/3">
             <p className="text-zinc-300 text-lg mb-4">
-              We build Private Brains. Local LLM hosting where data stays within client's walls.
+              We build Private Brains. Local LLM hosting where data stays within client&apos;s walls.
             </p>
             <p className="text-zinc-400">
               A new high-trust offer. We audit data leaks in your current stack, then deploy local LLMs and private vector databases. Your intellectual property is your most valuable asset—ensure it never trains public models. Your Brain, Your Walls.
