@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0F172A; /* slate-900 */
+    --foreground: #E4E4E7; /* zinc-200 */
+  }
+
+  * {
+    border-radius: 0 !important; /* hard edges */
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Base custom utilities */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(161, 161, 170, 0.1);
+}
+
+.heading-font {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
