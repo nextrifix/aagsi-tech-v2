@@ -1,12 +1,13 @@
-# Use Nginx alpine as base image
+# Stage 1: Build the Next.js static export
+FROM node:20-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+# Stage 2: Serve the static files with Nginx
 FROM nginx:alpine
-
-# Copy the exported static files from the build step to Nginx's default public directory
-# (Note: You must run `npm run build` before building this Docker image)
-COPY out /usr/share/nginx/html
-
-# Expose port 80
+COPY --from=builder /app/out /usr/share/nginx/html
 EXPOSE 80
-
-# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
