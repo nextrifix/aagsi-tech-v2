@@ -44,18 +44,19 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="glass-panel p-10 flex flex-col justify-center">
-          <h2 className="heading-font text-2xl font-bold mb-2">Afzal Malik</h2>
-          <div className="text-emerald-500 font-mono text-sm mb-6">Founder & Chief Architect</div>
-          <p className="text-zinc-400 mb-8">
+        <div className="glass-panel p-12 rounded-3xl flex flex-col justify-center relative overflow-hidden group hover:shadow-[0_0_50px_rgba(16,185,129,0.1)] transition-shadow duration-500">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-emerald-500/10 transition-colors duration-500"></div>
+          <h2 className="heading-font text-3xl font-bold mb-2 relative z-10">Afzal Malik</h2>
+          <div className="text-emerald-500 font-semibold tracking-wider text-sm mb-6 uppercase relative z-10">Founder & Chief Architect</div>
+          <p className="text-zinc-400 mb-8 leading-relaxed text-lg relative z-10">
             Leading the deployment of sovereign intelligence logistics. Architecting systems that prioritize universal justice, systemic leverage, and value-aligned evolution.
           </p>
-          <div className="border-t border-zinc-600/30 pt-6">
-            <div className="text-sm text-zinc-500 font-medium mb-2">CORE VALUES</div>
-            <ul className="space-y-2 text-zinc-300">
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-emerald-500 rounded-none"></span> Adl (Universal Justice)</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-emerald-500 rounded-none"></span> Systemic Leverage</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-emerald-500 rounded-none"></span> Value-Aligned Evolution</li>
+          <div className="border-t border-zinc-600/30 pt-8 relative z-10">
+            <div className="text-sm text-zinc-500 font-bold tracking-widest mb-4 uppercase">Core Values</div>
+            <ul className="space-y-4 text-zinc-300 font-medium">
+              <li className="flex items-center gap-3"><span className="w-2 h-2 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></span> Adl (Universal Justice)</li>
+              <li className="flex items-center gap-3"><span className="w-2 h-2 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></span> Systemic Leverage</li>
+              <li className="flex items-center gap-3"><span className="w-2 h-2 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></span> Value-Aligned Evolution</li>
             </ul>
           </div>
         </div>

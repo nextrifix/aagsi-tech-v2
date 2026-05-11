@@ -1,13 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-600/20 bg-slate-900 relative z-10 py-12 mt-20">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+    <footer className="border-t border-zinc-800 bg-slate-900/50 backdrop-blur-md relative z-10 py-16 mt-24">
+      <div className="container mx-auto px-6 max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="heading-font font-bold text-xl text-zinc-200 mb-4">Autonomous AGSI</h3>
-            <p className="text-zinc-400 text-sm max-w-sm mb-6">
+            <Link href="/" className="flex items-center gap-3 mb-6 group w-fit">
+              <Image src="/logo.png" alt="Autonomous AGSI Logo" width={36} height={36} className="group-hover:scale-110 transition-transform duration-300 opacity-80 group-hover:opacity-100" />
+              <h3 className="heading-font font-bold text-xl text-zinc-200 group-hover:text-emerald-400 transition-colors">Autonomous AGSI</h3>
+            </Link>
+            <p className="text-zinc-400 text-sm max-w-sm mb-6 leading-relaxed">
               Intelligence Logistics Agency. We build autonomous systems so you own the future, not rent it.
             </p>
             <p className="text-zinc-500 text-xs">

@@ -7,14 +7,13 @@
     --background: #0F172A; /* slate-900 */
     --foreground: #E4E4E7; /* zinc-200 */
   }
-
-  * {
-    border-radius: 0 !important; /* hard edges */
-  }
 }
 
 body {
   background-color: var(--background);
+  background-image: radial-gradient(circle at 15% 50%, rgba(16, 185, 129, 0.05), transparent 25%),
+                    radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.08), transparent 25%);
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
@@ -22,10 +21,11 @@ body {
 
 /* Base custom utilities */
 .glass-panel {
-  background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(161, 161, 170, 0.1);
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .heading-font {

@@ -25,9 +25,6 @@ const config: Config = {
         space: ["var(--font-space-grotesk)", "sans-serif"],
         inter: ["var(--font-inter)", "sans-serif"],
       },
-      borderRadius: {
-        none: "0px",
-      },
     },
   },
   plugins: [],

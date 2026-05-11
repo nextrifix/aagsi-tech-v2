@@ -37,39 +37,39 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Service 1 */}
-          <div className="glass-panel p-8 group hover:border-emerald-500/50 transition-colors">
-            <h3 className="heading-font text-2xl font-bold mb-4 text-zinc-200 group-hover:text-emerald-500 transition-colors">Workflow Automation</h3>
-            <p className="text-zinc-400 mb-6">
+          <div className="glass-panel p-10 rounded-3xl group hover:-translate-y-2 hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all duration-500">
+            <h3 className="heading-font text-2xl font-bold mb-4 text-zinc-200 group-hover:text-emerald-400 transition-colors">Workflow Automation</h3>
+            <p className="text-zinc-400 mb-8 leading-relaxed">
               Founder-free systems using n8n and recursive agent loops. Zero human touch in operations.
             </p>
-            <div className="text-sm font-medium text-emerald-500">Starting at $1,200/mo</div>
+            <div className="text-sm font-semibold tracking-wide uppercase text-emerald-500 bg-emerald-500/10 inline-block px-4 py-2 rounded-full">Starting at $1,200/mo</div>
           </div>
 
           {/* Service 2 */}
-          <div className="glass-panel p-8 group hover:border-emerald-500/50 transition-colors">
-            <h3 className="heading-font text-2xl font-bold mb-4 text-zinc-200 group-hover:text-emerald-500 transition-colors">AI Privacy & Sovereignty Audits</h3>
-            <p className="text-zinc-400 mb-6">
+          <div className="glass-panel p-10 rounded-3xl group hover:-translate-y-2 hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all duration-500">
+            <h3 className="heading-font text-2xl font-bold mb-4 text-zinc-200 group-hover:text-emerald-400 transition-colors">AI Privacy & Sovereignty Audits</h3>
+            <p className="text-zinc-400 mb-8 leading-relaxed">
               We build Private Brains. Local LLM hosting. Your data never leaves your walls.
             </p>
-            <div className="text-sm font-medium text-emerald-500">Enquire Only</div>
+            <div className="text-sm font-semibold tracking-wide uppercase text-emerald-500 bg-emerald-500/10 inline-block px-4 py-2 rounded-full">Enquire Only</div>
           </div>
 
           {/* Service 3 */}
-          <div className="glass-panel p-8 group hover:border-emerald-500/50 transition-colors">
-            <h3 className="heading-font text-2xl font-bold mb-4 text-zinc-200 group-hover:text-emerald-500 transition-colors">Strategic Foresight & Governance</h3>
-            <p className="text-zinc-400 mb-6">
+          <div className="glass-panel p-10 rounded-3xl group hover:-translate-y-2 hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all duration-500">
+            <h3 className="heading-font text-2xl font-bold mb-4 text-zinc-200 group-hover:text-emerald-400 transition-colors">Strategic Foresight & Governance</h3>
+            <p className="text-zinc-400 mb-8 leading-relaxed">
               1-on-1 consultancy for navigating the rupture between 2025-2040. Board-level work.
             </p>
-            <div className="text-sm font-medium text-emerald-500">Enquire Only</div>
+            <div className="text-sm font-semibold tracking-wide uppercase text-emerald-500 bg-emerald-500/10 inline-block px-4 py-2 rounded-full">Enquire Only</div>
           </div>
 
           {/* Service 4 */}
-          <div className="glass-panel p-8 group hover:border-emerald-500/50 transition-colors">
-            <h3 className="heading-font text-2xl font-bold mb-4 text-zinc-200 group-hover:text-emerald-500 transition-colors">Autonomous Workforce Deployment</h3>
-            <p className="text-zinc-400 mb-6">
+          <div className="glass-panel p-10 rounded-3xl group hover:-translate-y-2 hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all duration-500">
+            <h3 className="heading-font text-2xl font-bold mb-4 text-zinc-200 group-hover:text-emerald-400 transition-colors">Autonomous Workforce Deployment</h3>
+            <p className="text-zinc-400 mb-8 leading-relaxed">
               Level 3 AI integration. Digital Employees with dedicated dashboards, memory, and KPIs.
             </p>
-            <div className="text-sm font-medium text-emerald-500">Enquire Only</div>
+            <div className="text-sm font-semibold tracking-wide uppercase text-emerald-500 bg-emerald-500/10 inline-block px-4 py-2 rounded-full">Enquire Only</div>
           </div>
         </div>
       </section>
