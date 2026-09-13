@@ -1,45 +1,38 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-800 bg-slate-900/50 backdrop-blur-md relative z-10 py-16 mt-24">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-6 group w-fit">
-              <Image src="/logo.png" alt="Autonomous AGSI Logo" width={36} height={36} className="group-hover:scale-110 transition-transform duration-300 opacity-80 group-hover:opacity-100" />
-              <h3 className="heading-font font-bold text-xl text-zinc-200 group-hover:text-emerald-400 transition-colors">Autonomous AGSI</h3>
-            </Link>
-            <p className="text-zinc-400 text-sm max-w-sm mb-6 leading-relaxed">
-              Intelligence Logistics Agency. We build autonomous systems so you own the future, not rent it.
-            </p>
-            <p className="text-zinc-500 text-xs">
-              Multan, Pakistan | <a href="mailto:nextrifix@gmail.com" className="hover:text-emerald-500">nextrifix@gmail.com</a>
-            </p>
-          </div>
-          <div>
-            <h4 className="heading-font font-semibold text-zinc-200 mb-4">Navigation</h4>
-            <ul className="space-y-2 text-sm text-zinc-400">
-              <li><Link href="/services" className="hover:text-emerald-500 transition-colors">Services</Link></li>
-              <li><Link href="/about" className="hover:text-emerald-500 transition-colors">About</Link></li>
-              <li><Link href="/blog" className="hover:text-emerald-500 transition-colors">Lab</Link></li>
-              <li><Link href="/contact" className="hover:text-emerald-500 transition-colors">Contact</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="heading-font font-semibold text-zinc-200 mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm text-zinc-400">
-              <li><Link href="/privacy" className="hover:text-emerald-500 transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-emerald-500 transition-colors">Terms of Service</Link></li>
-            </ul>
-          </div>
-        </div>
-        <div className="border-t border-zinc-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-zinc-600 text-xs">
-            &copy; {new Date().getFullYear()} Autonomous AGSI. All rights reserved.
+    <footer className="relative z-10 mt-24 border-t border-zinc-800 bg-zinc-950/60 py-14">
+      <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 md:grid-cols-[1.3fr_1fr_1fr]">
+        <div>
+          <p className="heading-font text-sm tracking-[0.18em] text-zinc-100">AAGSI</p>
+          <p className="mt-4 max-w-sm text-sm text-zinc-400">
+            Public intelligence and consulting front door for the future AAGSI Business Intelligence &amp; Evolution Platform.
           </p>
+          <p className="mt-4 text-xs text-zinc-500">Multan, Pakistan · nextrifix@gmail.com</p>
         </div>
+
+        <div>
+          <h4 className="text-xs uppercase tracking-[0.2em] text-zinc-500">Explore</h4>
+          <ul className="mt-3 space-y-2 text-sm text-zinc-300">
+            <li><Link href="/">Homepage</Link></li>
+            <li><Link href="/blog">Research</Link></li>
+            <li><Link href="/services">Services</Link></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-xs uppercase tracking-[0.2em] text-zinc-500">Platform</h4>
+          <ul className="mt-3 space-y-2 text-sm text-zinc-300">
+            <li><Link href="/business-audit">Business Audit</Link></li>
+            <li><Link href="/contact">Start a Conversation</Link></li>
+            <li><Link href="/saas">Future /saas</Link></li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-10 w-full max-w-6xl border-t border-zinc-800 px-6 pt-6 text-xs text-zinc-600">
+        © {new Date().getFullYear()} AAGSI. All rights reserved.
       </div>
     </footer>
   );
